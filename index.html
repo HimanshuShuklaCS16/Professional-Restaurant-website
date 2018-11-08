@@ -35,14 +35,17 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12   col-sm-6">
+                <div class="col-12   col-sm-6" >
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12  col-sm align-self-center">
+                <div class="col-10  col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
-                </div>
+                
+
+   
             </div>
+            <a href="#reserve" role="button" class="col-12 col-sm-3  align-self-center  btn btn-sm btn-warning">Reserve Table</a>
         </div>
     </header>
 
@@ -56,7 +59,7 @@
                 <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza">
                 <div class="media-body">
                      <h2>Uthappizza<span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                 </div>
             </div>
                
@@ -66,12 +69,19 @@
 
 
         <div class="row row-content align-items-center no-gutters">
-            <div class="col-12 col-sm-3 offset-1">
+            <div class="col-12 col-sm-2 offset-1">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm-6 offset-1">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    
+               
+                <div class="media-body">
+                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p class="d-none  d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            </div>
+            <img src="img/buffet.png" class="d-flex ml-3 img-thumbnail align-self-center" alt="buffet">
+             </div>
             </div>
         </div>
 
@@ -94,6 +104,83 @@
             </div>
                
             </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="card col-md-8 offset-md-2" id="reserve">
+                <div class="card-header  bg-warning text-white ">
+                    <h3>Reserve a Table</h3>
+                </div>
+                    <div class="card-body">
+                         <form >
+                             <div class="form-group row">
+                                 <label class="col-12  col-md-3 col-form-label" for="guests">Number of Guests</label>
+                                 <div class="col- form-check" >
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios1" >
+                                    <label class="form-check-label " for="exampleradios1">
+                                        1&nbsp;
+                                    </label>
+
+                                 </div>
+                                 <div class=" form-check">
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios2" >
+                                    <label class="form-check-label" for="exampleradios2">
+                                        2&nbsp;
+                                    </label>
+
+                                 </div>
+                                 <div class=" form-check">
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios3" >
+                                    <label class="form-check-label" for="exampleradios3">
+                                        3&nbsp;
+                                    </label>
+
+                                 </div>
+                                 <div class=" form-check">
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios4" >
+                                    <label class="form-check-label" for="exampleradios4">
+                                        4&nbsp;
+                                    </label>
+
+                                 </div>
+                                 <div class=" form-check">
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios5" >
+                                    <label class="form-check-label" for="exampleradios5">
+                                        5&nbsp;
+                                    </label>
+
+                                 </div>
+                                 <div class=" form-check">
+                                    
+                                        <input type="radio" class="form-check-input" name="exampleradios" id="exampleradios6" >
+                                    <label class="form-check-label" for="exampleradios6">
+                                        6
+                                    </label>
+
+                                 </div>
+                             </div> 
+                             <div class="form-group row">
+                                <label for="date" class="col-12 col-md-3 col-form-label ">Date and Time</label>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" name="date" id="date"  class=" form-control"  placeholder="Date">
+                                    
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" name="date" id="time"  class=" form-control"  placeholder="Time">
+                                </div>
+                             </div>
+                             <div class="form-group row">
+                                <input type="button" name="" class="btn btn-primary  offset-md-3 " value="Reserve">
+                             </div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
