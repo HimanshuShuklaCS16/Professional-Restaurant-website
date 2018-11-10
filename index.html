@@ -29,7 +29,7 @@
             <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
             <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
         </ul>
-        <span class="navbar-text"><a data-toggle="modal" data-target="#loginmodal" href=""><span class="fa fa-sign-in"></span> Login</a></span>
+        <span class="navbar-text"><a  href="#" role="button" id="loginbtn"><span class="fa fa-sign-in"></span> Login</a></span>
     </div>
     </div>
 </nav>
@@ -193,7 +193,7 @@
 
    
             </div>
-            <a data-toggle="modal" data-target="#reservemodal" role="button" class="col-12 col-sm-3  align-self-center nav-link  btn btn-block btn-warning" >Reserve Table</a>
+            <a  role="button" class="col-12 col-sm-3  align-self-center nav-link  btn btn-block btn-warning" id="reservetable">Reserve Table</a>
         </div>
     </header>
 
@@ -319,9 +319,25 @@
                 
              
             });
-                       
-        });
+
+      
+              });          
+       
     </script>
+         <script>
+            $(document).ready(function () {
+                $("#loginbtn").click(function () {
+                    $("#loginmodal").modal('show');
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#reservetable").click(function () {
+                    $("#reservemodal").modal('show');
+                });
+            });
+        </script>
 </body>
 
 </html>
