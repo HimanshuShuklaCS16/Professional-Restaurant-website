@@ -243,10 +243,8 @@
                 <a href="#mycarousel" class="carousel-control-prev" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
 
                 <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-                <div class="btn-group" id="carousel-Button">
-                    <button class="btn btn-danger btn-sm" id="carousel-pause"><span class="fa fa-pause"></span></button> 
-                    <button class="btn btn-danger btn-sm" id="carousel-play"><span class="fa fa-play"></span></button>
-                </div>
+                    <button class="btn btn-danger btn-sm" id="carouselButton"><span class="fa fa-pause"></span></button> 
+                    
             </div>
         </div>
         </div>
@@ -305,12 +303,23 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("#mycarousel").carousel({interval: 2000});
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
+            $("#carouselButton").click(function(){
+                if ($(carouselButton).children("span").hasClass("fa fa-pause"))
+                {
+                       $("#mycarousel").carousel('pause');
+                       $(carouselButton).children("span").removeClass("fa fa-pause");
+                       $(carouselButton).children("span").addClass("fa fa-play");
+                }
+                else if($(carouselButton).children("span").hasClass("fa fa-play"))
+                {
+                     $("#mycarousel").carousel('cycle');
+                       $(carouselButton).children("span").removeClass("fa fa-play");
+                       $(carouselButton).children("span").addClass("fa fa-pause"); 
+                }
+                
+             
             });
-                        $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
+                       
         });
     </script>
 </body>
